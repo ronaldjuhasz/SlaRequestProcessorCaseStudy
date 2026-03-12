@@ -85,7 +85,6 @@ G --> I[followups.csv]
 
 ---
 
-```md
 ## Project Structure
 
 - `Program.cs` — Entry point and runtime orchestration
@@ -99,8 +98,6 @@ G --> I[followups.csv]
 - `outputFiles/` — Generated output files
 - `processedRequestIDs/` — Storage for processed request IDs
 - `SlaRequestProcessorCaseStudy.Tests/` — Unit tests verifying core logic
-
-```
 
 ---
 
