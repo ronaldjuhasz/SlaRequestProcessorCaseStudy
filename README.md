@@ -85,42 +85,20 @@ G --> I[followups.csv]
 
 ---
 
-# Project Structure
+```md
+## Project Structure
 
-Core components of the application:
-
-```
-Program.cs
-    Entry point and runtime orchestration
-
-RequestProcessor.cs
-    Core business rule evaluation and request handling
-
-SlaCalculator.cs
-    SLA deadline calculation using Europe/Vienna local time semantics
-
-DecisionWriter.cs
-    Writes decisions.csv and followups.csv
-
-ProcessedRequestStore.cs
-    Persists processed request IDs across runs to guarantee idempotency
-
-InputPathResolver.cs
-InputPathValidator.cs
-    Input configuration and CSV schema validation
-
-inputFiles/
-    Sample input data
-
-outputFiles/
-    Generated output files
-
-processedRequestIDs/
-    Storage for processed request IDs
-
-SlaRequestProcessorCaseStudy.Tests/
-    Unit tests verifying core logic
-```
+- `Program.cs` — Entry point and runtime orchestration
+- `RequestProcessor.cs` — Core business rule evaluation and request handling
+- `SlaCalculator.cs` — SLA deadline calculation using Europe/Vienna local time semantics
+- `DecisionWriter.cs` — Writes `decisions.csv` and `followups.csv`
+- `ProcessedRequestStore.cs` — Persists processed request IDs across runs to guarantee idempotency
+- `InputPathResolver.cs` — Resolves the input directory
+- `InputPathValidator.cs` — Validates input configuration and CSV schema
+- `inputFiles/` — Sample input data
+- `outputFiles/` — Generated output files
+- `processedRequestIDs/` — Storage for processed request IDs
+- `SlaRequestProcessorCaseStudy.Tests/` — Unit tests verifying core logic
 
 ---
 
