@@ -1,0 +1,4 @@
+TariffId;Name;RequiresSmartMeter;BaseMonthlyGross
+T-ECO;EconomicTariff;true;29.90
+T-BASIC;BasicTariff;false;24.50
+T-PRO;ProFixedTariff;true;39.00
