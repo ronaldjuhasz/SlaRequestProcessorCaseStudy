@@ -85,7 +85,7 @@ G --> I[followups.csv]
 
 ---
 
-```
+```md
 ## Project Structure
 
 - `Program.cs` — Entry point and runtime orchestration
